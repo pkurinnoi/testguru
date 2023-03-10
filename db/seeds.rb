@@ -15,11 +15,11 @@ category = Category.create([{title: 'Low level'},
                             {title: 'High level'},
                             {title: 'Top level'},
                             {title: 'Extreme level'}])
-test = Test.create([{title: 'Ruby', body: 'Ruby experience test', is_published: false, level: 2, category_id: 2},
+test = Test.create([{title: 'Ruby', body: 'Ruby experience test', is_published: false, level: 2, category_id: 1},
                     {title: 'C++', body: 'C++ experience test', is_published: false, level: 1, category_id: 1},
-                    {title: 'Rails', body: 'Rails experience test', is_published: false, level: 3, category_id: 3},
-                    {title: 'Python', body: 'Python experience test', is_published: false, level: 4, category_id: 4},
-                    {title: 'Erlang', body: 'Erlang experience test', is_published: false, level: 5, category_id: 5}])
+                    {title: 'Rails', body: 'Rails experience test', is_published: false, level: 3, category_id: 1},
+                    {title: 'Python', body: 'Python experience test', is_published: false, level: 4, category_id: 1},
+                    {title: 'Erlang', body: 'Erlang experience test', is_published: false, level: 5, category_id: 1}])
 question = Question.create([{title: 'What is the course main subject?', body: 'This question is about course subject.', is_published: false, test_id: 1},
                             {title: 'What is the colour of the sky?', body: 'This question is about sky color.', is_published: false, test_id: 2},
                             {title: 'What is the president name?', body: 'This question is president name.', is_published: false, test_id: 3},
