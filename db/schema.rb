@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 2023_03_09_000005) do
 
   create_table "users", force: :cascade do |t|
     t.string "name", null: false
+    t.text "passed_tests"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
