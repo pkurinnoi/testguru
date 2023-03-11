@@ -1,8 +1,7 @@
 class User < ApplicationRecord
-
-  serialize :passed_tests, Array
+  has_and_belongs_to_many :tests
 
   def get_passed_tests_by_level(level)
-    Test.where(id: self.passed_tests.uniq, level: level)
+    self.tests.where(level: level).uniq
   end
 end
